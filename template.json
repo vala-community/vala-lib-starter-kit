@@ -1,0 +1,47 @@
+{
+    "description": "A Vala Library Starter Kit with Tests, Valadoc Documentation Generation all setup",
+    "variables": {
+        "PROJECT_SUMMARY": {
+            "summary": "A summary of the project",
+            "default": "A library that does awesome things"
+        },
+        "API_NAMESPACE": {
+            "summary": "The API namespace",
+            "default": "/${PROJECT_NAME}/([- ]|^)(\\w)/\\u\\2/",
+            "pattern": "^[A-Za-z][[:word:]]*$"
+        },
+        "API_VERSION": {
+            "summary": "The API version",
+            "default": "0.1",
+            "pattern": "^\\d+(\\.\\d+)*$"
+        },
+        "LIBRARY_NAME": {
+            "summary": "The name of the library",
+            "default": "/lib${API_NAMESPACE}/\\w+/\\L\\0\\E/",
+            "pattern": "^[[:word:]][[:word:]-]*$"
+        },
+    	"GIR_NAME": {
+    		"summary": "The name of the library",
+            "default": "/${API_NAMESPACE}/"
+    	},
+        "OBJECT_PATH": {
+            "summary": "Object Path (Used for DBUS, Testing etc.)",
+            "default": "/\\/${API_NAMESPACE}/\\w+/\\L\\0\\E/",
+            "pattern": "^\/[A-Za-z0-9_]+(?:\/[A-Za-z0-9_]+)*$"
+        },
+        "LIBRARY_DEP_NAME": {
+            "summary": "The name of the dependency variable for the library",
+            "default": "/${LIBRARY_NAME}/-/_/",
+            "auto": true
+        }
+    },
+    "templates": [
+        "meson.build",
+        "README.md",
+        "src/Config.vala.in",
+        "src/Library.vala",
+        "src/meson.build",
+        "tests/Test.vala",
+        "tests/meson.build"
+    ]
+}
