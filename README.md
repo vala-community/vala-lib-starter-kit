@@ -60,3 +60,8 @@ meson configure -Denable_valadoc=false build
 ```
 
 To enable valadoc documentation generation again, perform the same commands again but replace `false` in `-Denable_valadoc=` with `true`.
+
+---
+
+Project generated using [vala-lib-starter-kit
+](https://github.com/vala-community/vala-lib-starter-kit) template via [valdo](https://github.com/vala-lang/valdo)
