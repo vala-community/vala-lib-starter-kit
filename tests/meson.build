@@ -1,4 +1,5 @@
 unit_test_dependencies = [
+    ${LIBRARY_DEP_NAME}_dep,
     ${LIBRARY_DEP_NAME}_deps
 ]
 
