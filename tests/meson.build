@@ -1,9 +1,8 @@
 unit_test_dependencies = [
     ${LIBRARY_DEP_NAME}_dep,
-    ${LIBRARY_DEP_NAME}_deps
 ]
 
-unit_test_sources = [files('Test.vala'), config_file]
+unit_test_sources = [files('Test.vala')]
 
 # Create executable for unit tests
 test_exe = executable(
