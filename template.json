@@ -21,7 +21,7 @@
             "pattern": "^[[:word:]][[:word:]-]*$"
         },
     	"GIR_NAME": {
-    		"summary": "The name of the library",
+    		"summary": "The GIR name of the library",
             "default": "/${API_NAMESPACE}/"
     	},
         "OBJECT_PATH": {
